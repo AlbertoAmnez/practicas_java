@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+ * Solo he creado la super clase y las subclases para poder dar de alta un trabajador y sacar por pantalla el posterior registro
+ */
+
 public class Ejercicio3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
