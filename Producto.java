@@ -7,7 +7,7 @@ public class Producto {
         this.precioUnitario = precioUnitario;
     }
 
-    // Getters y setters
+    
     public String getNombre() {
         return nombre;
     }

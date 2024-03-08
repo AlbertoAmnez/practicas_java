@@ -9,7 +9,7 @@ public class Ejercicio2 {
 
         System.out.println("¿Cuál es el número total de productos?");
         int numProductos = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea
+        scanner.nextLine(); 
 
         CuentaSupermercado cuenta = new CuentaSupermercado();
         Map<String, Double> precios = new HashMap<>();

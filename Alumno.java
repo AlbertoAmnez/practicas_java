@@ -42,6 +42,11 @@ public void addAsignatura(String nombreAsignatura, double nuevaNota){
     asignaturas.put(nombreAsignatura, nuevaAsignatura); // Añade nueva asignatura
 }
 
+/*
+ * la idea era que no pudiera modificar la nota si la asignatura no existe, la parte de la modificacion es correcta.
+ * El problema surge cuando me pide una asignatura para modificar e introduzco un valor inexistente, no me la contabiliza en el boletin pero no me salta error.
+ */
+
 public void modifNota(String nombreAsignatura, double nuevaNota){
     if (asignaturas.containsKey(nombreAsignatura)){
         Asignatura asignatura = asignaturas.get(nombreAsignatura);
@@ -50,6 +55,10 @@ public void modifNota(String nombreAsignatura, double nuevaNota){
         System.out.println("Esta asignatura no pertenece a dicho alumno");
     }
 }
+
+/*
+ * Nota media
+ */
 public double calculoPromedio(){
     double suma = 0;
     for (Asignatura asignatura : asignaturas.values()){
